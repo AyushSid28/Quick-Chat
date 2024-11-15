@@ -1,0 +1,138 @@
+.chatroom {
+    font-family: 'Arial', sans-serif;
+    background: url('ChatBG.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fab711; /* Light text color for better contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  h1 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5);
+    margin-top: 30px;
+    color: #fab711;
+    font-size: 3.5rem;
+  }
+  
+  h2 {
+    color: #fab711;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5);
+  }
+  
+  #messages {
+    list-style-type: none;
+    padding: 0;
+    max-height: 50vh;
+    width: 90%;
+    overflow-y: auto;
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  #messages li {
+    padding: 12px;
+    margin: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    max-width: 100%;
+  }
+  
+  .my-message {
+    background: rgba(255, 255, 255, 0.8);
+    align-self: flex-end;
+    text-align: right;
+    color: #000;
+  }
+  
+  .other-message {
+    background: rgba(255, 255, 255, 0.2);
+    align-self: flex-start;
+    text-align: left;
+    color: #000;
+  }
+  
+  #chatForm {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  #message {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 1rem;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #chatForm button {
+    background-color: #fab711;
+    color: white;
+    align-items: flex-end;
+    border: none;
+    width: 100%;
+    border-radius: 25px;
+    padding: 15px 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  #chatForm button:hover {
+    background-color: #fab711;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+  }
+  
+  #leaveButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fab711;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  #leaveButton:hover {
+    background-color: #e84118;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+  }
+  
+  @media (max-width: 600px) {
+    #chatForm {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    #message {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    #chatForm button {
+      width: 100%;
+    }
+  }
+  
